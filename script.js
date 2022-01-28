@@ -30,6 +30,15 @@ var app = new Vue({
         toggleDone(index) {
             this.list[index].done = !this.list[index].done;
             console.log(this.list[index].done);
+        },
+
+        deleteTask(index) {
+            this.list = this.list.filter((item, i) => {
+                if (index !== i) {
+                    return true;
+                }
+                return false;
+            });
         }
     },
 });
