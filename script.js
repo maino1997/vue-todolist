@@ -8,10 +8,7 @@ var app = new Vue({
         userText: '',
         done: false,
         list: [
-            {
-                text: 'Inizia a fare la spesa',
-                done: true,
-            },
+
         ],
     },
 
